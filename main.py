@@ -1,4 +1,16 @@
 import os
+from PIL import Image
+
+#img = Image.open("bear.png")
+#w, h = img.size
+#new_w = 400
+#new_h = int(h * (new_w / w))
+#out = img.resize((new_w, new_h), Image.BICUBIC)
+#out.show()
+
+def choose_size()
+    print("What width would you like your photos?")
+    pic_width = input("example: 250")
 
 # get the path that the user wants to use to scale the directory
 print("What is the absolute path of the folder you wish to scale? Hint: you can right click the folder and select copy as path.")
@@ -23,7 +35,10 @@ else:
 
 print("Does this path look correct to you?")
 right_path = input("yes / no: ")
-if right_path =="yes":
-    print("placeholder")
+if right_path.lower() =="yes":
+    print("Good, lets move on")
+    new_width = choose_size()
+
+
 else:
     print("Lets try that again")
